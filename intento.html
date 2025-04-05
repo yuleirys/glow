@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Tienda</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .container {
+            display: flex;
+            max-width: 1100px;
+            margin: 50px auto;
+            gap: 20px;
+        }
+        .gallery {
+            display: flex;
+            gap: 10px;
+        }
+        .thumbnails {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .thumbnails img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+        }
+        .main-image {
+            width: 350px;
+            height: auto;
+            border-radius: 0;
+            max-height: 450px; /* Limita la altura de la imagen principal */
+        }
+        .product-info {
+            flex: 1;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .price {
+            font-size: 20px;
+            color: #e44d9c;
+            margin: 10px 0;
+        }
+        .color-selection, .size-selection {
+            margin: 15px 0;
+        }
+        .color-option {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .size-selection span {
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .add-to-cart {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #f8b7d3;
+            color: #fff;
+            border: none;
+            font-family: 'Verdana', sans-serif;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .add-to-cart:hover {
+            background: #e69ab0;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gallery">
+            <div class="thumbnails">
+                <img src="https://i.pinimg.com/736x/ac/23/4e/ac234e1204a89df8796f8d3fcc0f40a0.jpg" alt="Miniatura 1">
+                <img src="https://i.pinimg.com/736x/ac/23/4e/ac234e1204a89df8796f8d3fcc0f40a0.jpg" alt="Miniatura 2">
+                <img src="https://i.pinimg.com/736x/ac/23/4e/ac234e1204a89df8796f8d3fcc0f40a0.jpg" alt="Miniatura 3">
+                <img src="https://i.pinimg.com/736x/ac/23/4e/ac234e1204a89df8796f8d3fcc0f40a0.jpg" alt="Miniatura 4">
+            </div>
+            <img src="https://i.pinimg.com/736x/ac/23/4e/ac234e1204a89df8796f8d3fcc0f40a0.jpg" alt="Producto" class="main-image">
+        </div>
+        <div class="product-info">
+            <h1>ELINA</h1>
+            <p class="price">PRECIO VIP: 7,46€</p>
+            <p class="price">ESTÁNDAR: 39,95€</p>
+            <p>Incluye 75% de descuento en el primer artículo</p>
+            <div class="color-selection">
+                <p>Elige un color: NEGRO</p>
+                <div class="color-option" style="background: black;"></div>
+                <div class="color-option" style="background: beige;"></div>
+                <div class="color-option" style="background: rgb(255, 129, 217);"></div>
+            </div>
+            <div class="size-selection">
+                <p>Elige una talla:</p>
+                <span>36</span><span>36.5</span><span>37</span><span>38</span><span>38.5</span><span>39</span><span>40</span><span>41</span><span>42</span>
+            </div>
+            <button class="add-to-cart">AÑADIR AL CARRITO</button>
+            <div class="description">
+                <h2>DESCRIPCIÓN</h2>
+                <p>Bailarina con un diseño muy ponible a la vez que sofisticado. Tela troquelada y puntera pronunciada, perfecta para looks de oficina en primavera. Disponible en negro, blanco y camel.</p>
+                <h3>Detalles</h3>
+                <ul>
+                    <li>Altura del tacón: zapato plano</li>
+                    <li>Altura plataforma: N/A</li>
+                    <li>Ancho de la caña: N/A</li>
+                    <li>Piel sintética</li>
+                    <li>Suela sintética</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
